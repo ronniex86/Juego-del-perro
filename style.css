@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #87ceeb;
+}
+#gameCanvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+#mobileControls {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+#mobileControls button {
+  font-size: 2rem;
+  margin: 0 10px;
+  padding: 10px 20px;
+}
+@media (max-width: 768px) {
+  #mobileControls {
+    display: block;
+  }
+}
